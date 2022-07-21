@@ -40,43 +40,45 @@
             </div>
 
             <div class="wrap">
-                <div class="install">
-                    <h2>Manual</h2>
-                    <p>
-                        Instructions for installation, usage, and common questions
-                        are addressed in the user manual. You can access the manual
-                        <a href="Manual.pdf" download="Manual">here</a>.
-                    </p>
+                <div class="row">
+                    <div class="install">
+                        <h2>Manual</h2>
+                        <p>
+                            Instructions for installation, usage, and common questions
+                            are addressed in the user manual. You can access the manual
+                            <a href="Manual.pdf" download="Manual">here</a>.
+                        </p>
+                    </div>
+        
+                    <div class="code">
+                        <h2>Tutorials</h2>
+                        <p>
+                            Video tutorials will soon be available on
+                            <a href="https://www.youtube.com/">YouTube</a>.
+                        </p>
+                    </div>
                 </div>
-    
-                <div class="code">
-                    <h2>Tutorials</h2>
-                    <p>
-                        Video tutorials will soon be available on
-                        <a href="https://www.youtube.com/">YouTube</a>.
-                    </p>
-                </div>
-            </div>
 
-            <div class="wrap">
-                <div class="install">
-                    <h2>Installation</h2>
-                    <p>
-                        CaImg is available for both Windows and MacOS. The software
-                        can be used without running any code or requirements. Please
-                        refer to the manual for instructions on how to install the software.
-                    </p>
-                </div>
-    
-                <div class="code">
-                    <h2>Code Availability</h2>
-                    <p>
-                        CaImg software is available for download as an executable file for
-                        <a href="https://github.com/Mohaddadnia/CaImg-Windows">Windows</a>
-                        and <a href="https://github.com/Mohaddadnia/CaImg-Mac">MacOS</a>.
-                        In addition, you can find the code base of the software on the software's GitHub
-                        <a href="https://github.com/Mohaddadnia/CaImg-GUI">repository</a>.
-                    </p>
+                <div class="row">
+                    <div class="install">
+                        <h2>Installation</h2>
+                        <p>
+                            CaImg is available for both Windows and MacOS. The software
+                            can be used without running any code or requirements. Please
+                            refer to the manual for instructions on how to install the software.
+                        </p>
+                    </div>
+        
+                    <div class="code">
+                        <h2>Code Availability</h2>
+                        <p>
+                            CaImg software is available for download as an executable file for
+                            <a href="https://github.com/Mohaddadnia/CaImg-Windows">Windows</a>
+                            and <a href="https://github.com/Mohaddadnia/CaImg-Mac">MacOS</a>.
+                            In addition, you can find the code base of the software on the software's GitHub
+                            <a href="https://github.com/Mohaddadnia/CaImg-GUI">repository</a>.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -228,7 +230,12 @@
         }
         
         .wrap {
-            display: inline-flex;
+            display: table;
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+        .row {
+            display: table-row;
         }
 
         .tutorial {
@@ -250,6 +257,7 @@
         }
 
         .install {
+            display: table-cell;
             width: 45%;
             overflow: hidden;
             border: 2px solid;
@@ -260,6 +268,7 @@
         }
 
         .code {
+            display: table-cell;
             width: 45%;
             overflow: hidden;
             border: 2px solid;
