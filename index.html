@@ -1,0 +1,275 @@
+<html>
+
+    <head>
+        <title>CaImg</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body>
+
+        <div class="heading">
+            <img id="logo" src="icon.png" alt="CaImg" title="CaImg">
+            <center>
+                <h1>An Artifact and Noise Correction Pipeline for Neuronal Calcium Imaging Data</h1>
+            </center>
+        </div>
+
+        <div class="line1"></div>
+
+        <div class="mid">
+            <center>
+                <p class="author">Mohammad Haddadnia</p>
+                <p class="author">Tosif Ahamed</p>
+                <p class="author">Mei Zhen</p>
+                <!-- <p style="font-size: 18;">Lunenfeld-Tanenbaum Research Institute</p> -->
+            </center>
+        </div>
+
+        <div class="line2"></div>
+
+        <div class="main">
+            
+            <div class="demo">
+                <center>
+                    <img src="CaImg Demo.gif" width="60%">
+                </center>
+            </div>
+
+            <div class="wrap">
+                <div class="install">
+                    <h2>Manual</h2>
+                    <p>
+                        Instructions for installation, usage, and common questions
+                        are addressed in the user manual. You can access the manual
+                        <a href="Manual.pdf" download="Manual">here</a>.
+                    </p>
+                </div>
+    
+                <div class="code">
+                    <h2>Tutorials</h2>
+                    <p>
+                        Video tutorials will soon be available on
+                        <a href="https://www.youtube.com/">YouTube</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="install">
+                    <h2>Installation</h2>
+                    <p>
+                        CaImg is available for both Windows and MacOS. The software
+                        can be used without running any code or requirements. Please
+                        refer to the manual for instructions on how to install the software.
+                    </p>
+                </div>
+    
+                <div class="code">
+                    <h2>Code Availability</h2>
+                    <p>
+                        CaImg software is available for download as an executable file for
+                        <a href="https://github.com/Mohaddadnia/CaImg-Windows">Windows</a>
+                        and <a href="https://github.com/Mohaddadnia/CaImg-Mac">MacOS</a>.
+                        In addition, you can find the code base of the software on the software's GitHub
+                        <a href="https://github.com/Mohaddadnia/CaImg-GUI">repository</a>.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="copyrights">
+                <center>
+                    <p style="font-size: 12;"> &copy; 2025 Zhen Lab. All Rights Reserved.</p>
+                </center>
+            </div>
+
+        </div>
+
+    </body>
+
+    <style>
+
+        body {
+            background-color: #44475F;
+            border-color: white;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 25px;
+            text-align: center;
+            padding: 35px 0px;
+        }
+
+        a:link {
+            color:#79BB28;
+        }
+        a:hover {
+            color: #398F31;
+        }
+        a:visited {
+            color: #3A7434;
+        }
+
+        #logo {
+            float: left;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .heading {
+            height: 100px;
+        }
+        .line1 {
+            height: 2px;
+            background-color: white;
+            -webkit-animation: rightslide .75s 1 forwards;
+            -moz-animation: rightslide .75s 1 forwards;
+            -o-animation: rightslide .75s 1 forwards;
+            animation: rightslide .75s 1 forwards;
+        }
+        .line2 {
+            height: 2px;
+            background-color: white;
+            -webkit-animation: leftslide .75s 1 forwards;
+            -moz-animation: leftslide .75s 1 forwards;
+            -o-animation: leftslide .75s 1 forwards;
+            animation: leftslide .75s 1 forwards;
+        }
+        @keyframes leftslide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @keyframes rightslide {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @-webkit-keyframes leftslide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @-webkit-keyframes rightslide {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @-moz-keyframes leftslide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @-moz-keyframes rightslide {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @-o-keyframes leftslide {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        @-o-keyframes rightslide {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+        
+        .mid {
+            background-color: #44475F;
+            padding: 5px;
+        }
+        
+        .author {
+            display: inline;
+            margin: 50px;
+        }
+
+        .main {
+            border: 0px solid;
+        }
+
+        .demo {
+            padding: 1%;
+            margin: 1%;
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        
+        .wrap {
+            display: inline-flex;
+        }
+
+        .tutorial {
+            width: 85%;
+            overflow: hidden;
+            border: 2px solid;
+            padding: 2%;
+            margin: 1%;
+            margin-right: 0%;
+        }
+
+        .manual {
+            width: 85%;
+            overflow: hidden;
+            border: 2px solid;
+            padding: 2%;
+            margin: 1%;
+            margin-left: 0%;
+        }
+
+        .install {
+            width: 45%;
+            overflow: hidden;
+            border: 2px solid;
+            height: 200px;
+            padding: 2%;
+            margin: 1%;
+            margin-left: 0%;
+        }
+
+        .code {
+            width: 45%;
+            overflow: hidden;
+            border: 2px solid;
+            height: 200px;
+            padding: 2%;
+            margin: 1%;
+            margin-right: 0%;
+        }
+
+        .copyrights {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+
+    </style>
+
+</html>
